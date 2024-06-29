@@ -5,7 +5,6 @@ import pandas as pd
 import numpy as np
 
 import matplotlib.pyplot as plt
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
 import locale
 locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
