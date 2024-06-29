@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 import locale
-locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
+locale.setlocale(locale.LC_ALL, "de_DE")
 pd.options.display.float_format = '{:n}'.format
 
 font = {'fontname':'Inter'}
