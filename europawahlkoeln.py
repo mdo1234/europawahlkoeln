@@ -116,14 +116,14 @@ fig, ax = plt.subplots(figsize=(5, 5))
 bars = ax.bar(getroffeneauswahl.index, getroffeneauswahl.values, color=farben)
 
 # Beschriftungen und Titel setzen
-ax.set_xlabel("Wahlergebnis der Parteien", **font)
-ax.set_ylabel("Prozent", **font)
-ax.set_title("Europawahl, 9. Juni 2024" + ", " + str(auswahl), **font)
+ax.set_xlabel("Wahlergebnis der Parteien")
+ax.set_ylabel("Prozent")
+ax.set_title("Europawahl, 9. Juni 2024" + ", " + str(auswahl))
 ax.tick_params(axis="x", labelsize=9, bottom=False)
 ax.tick_params(axis="y", width=1)
 
 # Balkenbeschriftungen hinzufügen
-ax.bar_label(ax.containers[0], fmt='{:#.3n}', padding=3, **font)
+ax.bar_label(ax.containers[0], fmt='{:#.3n}', padding=3)
 
 # Ränder und Hintergrundfarbe setzen
 ax.margins(x=0.1, y=0.2)
