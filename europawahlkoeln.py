@@ -10,7 +10,15 @@ import locale
 locale.setlocale(locale.LC_ALL, "de_DE")
 pd.options.display.float_format = '{:n}'.format
 
-font = {'fontname':'Inter'}
+# Hide Streamlit's footer
+hide_footer_style = """
+<style>
+.embeddedAppMetaInfoBar_container__DxxL1 {
+display: none;
+}
+</style>
+"""
+st.markdown(hide_footer_style, unsafe_allow_html=True)
 
 # Wahldaten einlesen
 daten = pd.read_csv("https://wahlen.stadt-koeln.de/prod/EUW2024/05315000/daten/opendata/Open-Data-05315000-Wahl-zum-10.-Europaeischen-Parlament-Stadtteil.csv", sep = ";")
