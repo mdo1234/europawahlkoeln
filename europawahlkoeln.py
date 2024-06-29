@@ -104,7 +104,7 @@ farben = ['k', 'LimeGreen', 'r', 'MediumBlue', 'Gold', 'DeepPink', 'purple', 'gr
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Erzeugen der Figure und Achsen
-fig, ax = plt.subplots(figsize=(5, 2))
+fig, ax = plt.subplots(figsize=(5, 5))
 bars = ax.bar(getroffeneauswahl.index, getroffeneauswahl.values, color=farben)
 
 # Beschriftungen und Titel setzen
