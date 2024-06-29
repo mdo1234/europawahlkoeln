@@ -85,10 +85,10 @@ gebiete = ["Altstadt/Nord", "Altstadt/Süd", "Bayenthal", "Bickendorf", "Bilders
 
 # Ab hier Web-App-Erstellun via Streamlit
 
-"""
+# """
 # Wahlergebnisse in den Kölner Stadtteilen
 #### Schaue dir an, wie Kölnerinnen und Kölner bei der Europawahl am 9. Juni 2024 in deinem Stadtteil gewählt haben
-"""
+# """
 
 auswahl = st.selectbox("", gebiete, index=0, placeholder="Wähle ein Gebiet aus")
 
@@ -98,7 +98,7 @@ auswahl = st.selectbox("", gebiete, index=0, placeholder="Wähle ein Gebiet aus"
 getroffeneauswahl = daten.loc[auswahl]
 
 # Basisinfos für das Diagramm
-font = {'fontname': "Segoe UI"}
+# font = {'fontname': "Segoe UI"}
 farben = ['k', 'LimeGreen', 'r', 'MediumBlue', 'Gold', 'DeepPink', 'purple', 'grey']
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
