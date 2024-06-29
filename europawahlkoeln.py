@@ -125,9 +125,4 @@ st.pyplot()
 
 st.html("<p align=right><span>Quelle: Stadt Köln</span></p>")
 
-hide_default_format = """
-div.embeddedAppMetaInfoBar_container__DxxL1 {     /* this will hide div with class div_class_name */
-  display:none;
-}
-       """
-st.markdown(hide_default_format, unsafe_allow_html=True)
+st.markdown('div.embeddedAppMetaInfoBar_container__DxxL1 {     /* this will hide div with class div_class_name */ display:none;}', unsafe_allow_html=True)
