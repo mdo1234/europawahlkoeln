@@ -124,5 +124,3 @@ ax.set_facecolor('whitesmoke')
 st.pyplot()
 
 st.html("<p align=right><span>Quelle: Stadt Köln</span></p>")
-
-st.markdown('div.embeddedAppMetaInfoBar_container__DxxL1 {     /* this will hide div with class div_class_name */ display:none;}', unsafe_allow_html=True)
