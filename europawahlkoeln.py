@@ -123,9 +123,6 @@ st.pyplot()
 
 st.html("<p align=right><span>Quelle: Stadt Köln</span></p>")
 
-st.html(<style>embeddedAppMetaInfoBar_container__DxxL1 {
-  display: none;
-}, unsafe_allow_html=True</style>
 
 st.markdown("""
 <style>
