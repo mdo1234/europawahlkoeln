@@ -88,7 +88,7 @@ st.markdown("""
 <style>
    .embeddedAppMetaInfoBar_hostedName__-kdmi
    {
-  display: none !important;
+  visibility: hidden !important;
 }
 </style>
 """, unsafe_allow_html=True)
