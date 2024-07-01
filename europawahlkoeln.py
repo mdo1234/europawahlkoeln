@@ -83,14 +83,10 @@ gebiete = ["Altstadt/Nord", "Altstadt/Süd", "Bayenthal", "Bickendorf", "Bilders
 
 # Ab hier Web-App-Erstellun via Streamlit
 
-# Ausblenden des Streamlit-Footers
+# Ausblenden des Streamlit-Footers greift leider nicht
 st.markdown("""
 <style>
-   div[class="appview-container st-emotion-cache-1yiq2ps ea3mdgi9"]
-   {
-  background-color:blue !important;
-}
-   div[class="embeddedAppMetaInfoBar_container__DxxL1"]
+      div[class="embeddedAppMetaInfoBar_container__DxxL1"]
    {
   display:none !important;
 }
