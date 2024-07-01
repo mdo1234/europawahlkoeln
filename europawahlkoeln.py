@@ -118,6 +118,9 @@ ax.tick_params(axis="y", width=1)
 # Balkenbeschriftungen hinzufügen
 ax.bar_label(ax.containers[0], fmt='{:#.3n}', padding=3)
 
+# Darstellung an verfügbaren Raum anpassen
+ax.autoscale(enable=True)
+
 # Ränder und Hintergrundfarbe setzen
 ax.margins(x=0.1, y=0.2)
 ax.set_facecolor('whitesmoke')
