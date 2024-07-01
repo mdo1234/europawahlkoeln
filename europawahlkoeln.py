@@ -86,7 +86,7 @@ gebiete = ["Altstadt/Nord", "Altstadt/Süd", "Bayenthal", "Bickendorf", "Bilders
 # Ausblenden des Streamlit-Footers
 st.markdown("""
 <style>
-   .embeddedAppMetaInfoBar_hostedName__-kdmi
+   div[class="embeddedAppMetaInfoBar_hostedName__-kdmi"]
    {
   visibility: hidden !important;
 }
