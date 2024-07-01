@@ -84,14 +84,14 @@ gebiete = ["Altstadt/Nord", "Altstadt/Süd", "Bayenthal", "Bickendorf", "Bilders
 # Ab hier Web-App-Erstellun via Streamlit
 
 # Ausblenden des Streamlit-Footers
-st.markdown("""
+st.html("""
 <style>
    div[class="embeddedAppMetaInfoBar_hostedName__-kdmi"]
    {
   visibility: hidden !important;
 }
 </style>
-""", unsafe_allow_html=True)
+""")
 
 auswahl = st.selectbox("", gebiete, index=0, placeholder="Wähle ein Gebiet aus")
 
