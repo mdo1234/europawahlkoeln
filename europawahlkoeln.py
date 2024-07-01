@@ -83,14 +83,17 @@ gebiete = ["Altstadt/Nord", "Altstadt/Süd", "Bayenthal", "Bickendorf", "Bilders
 
 # Ab hier Web-App-Erstellun via Streamlit
 
-# """
-# Wahlergebnisse in den Kölner Stadtteilen
-#### Schaue dir an, wie Kölnerinnen und Kölner bei der Europawahl am 9. Juni 2024 in deinem Stadtteil gewählt haben
-# """
+# Ausblenden des Streamlit-Footers
+st.markdown("""
+<style>
+   div.embeddedAppMetaInfoBar_container__DxxL1
+   {
+  display: none;
+}
+</style>
+""", unsafe_allow_html=True)
 
 auswahl = st.selectbox("", gebiete, index=0, placeholder="Wähle ein Gebiet aus")
-
-# st.write("Du hast ", auswahl, " ausgewählt.")
 
 # Erzeugen der Daten für das ausgewählte Veedel
 getroffeneauswahl = daten.loc[auswahl]
@@ -121,14 +124,5 @@ ax.set_facecolor('whitesmoke')
 
 st.pyplot()
 
+# Quelle hinzufügen
 st.html("<p align=right><span>Quelle: Stadt Köln</span></p>")
-
-
-st.markdown("""
-<style>
-   .embeddedAppMetaInfoBar_container__DxxL1
-   {
-  display: none;
-}
-</style>
-""", unsafe_allow_html=True)
