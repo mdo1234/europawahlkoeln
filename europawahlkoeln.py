@@ -90,7 +90,7 @@ st.markdown("""
    {
   background-color:blue !important;
 }
-   div[class="st-ae st-af st-ag st-ah st-ai st-aj st-ak st-al st-am"]
+   div[class="embeddedAppMetaInfoBar_container__DxxL1"]
    {
   display:none !important;
 }
