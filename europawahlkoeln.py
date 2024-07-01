@@ -88,7 +88,7 @@ st.markdown("""
 <style>
    div.embeddedAppMetaInfoBar_container__DxxL1
    {
-  display: none;
+  display: none !important;
 }
 </style>
 """, unsafe_allow_html=True)
